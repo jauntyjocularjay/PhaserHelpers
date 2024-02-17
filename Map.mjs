@@ -6,7 +6,7 @@ class Map {
     }
 }
 
-class SquareTileMap extends Map {
+class SquareMap extends Map {
     constructor(keyString, tilesideInteger){
         super(keyString, tilesideInteger, tilesideInteger)
     }
@@ -14,5 +14,5 @@ class SquareTileMap extends Map {
 
 export {
     Map,
-    SquareTileMap
+    SquareMap
 }
