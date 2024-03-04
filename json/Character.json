@@ -1,0 +1,17 @@
+{
+    "idle": {
+        "alias": {"type": "string"},
+        "frame": {"type": "object"},
+        "png": {"type": "string"}
+    },
+    "walk": {
+        "alias": {"type": "string"},
+        "frame": {"type": "object"},
+        "png": {"type": "string"}
+    },
+    "animationName": {
+        "alias": {"type": "string"},
+        "frame": {"type": "object"},
+        "png": {"type": "string"}
+    }
+}
