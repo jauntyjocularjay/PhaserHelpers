@@ -8,6 +8,11 @@ import {
     SquareMap
 } from './Map.mjs'
 
+import {
+    EnvironmentImage,
+    EnvironmentTileset,
+    Environment
+} from './Environment.mjs'
 
 
 /*** Preload Functions ***/
@@ -72,6 +77,9 @@ export {
     SquareFrame,
     Map,
     SquareMap,
+    EnvironmentImage,
+    EnvironmentTileset,
+    Environment,
     loadEnvironment,
     loadCharacterIdle,
     addEnvironment
