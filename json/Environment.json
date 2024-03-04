@@ -4,13 +4,7 @@
         "width": {"type": "number"},
         "height": {"type": "number"}
     },
-    "layers": [
-        {
-            "path": {"type": "string"},
-            "width": {"type": "number"},
-            "height": {"type": "number"}
-        }
-    ],
+    "layers": {"type": "array"},
     "tileset": {
         "alias": {"type": "string"},
         "path": {"type": "string"},

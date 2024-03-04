@@ -1,0 +1,5 @@
+{
+    "path": {"type": "string"},
+    "width": {"type": "number"},
+    "height": {"type": "number"}
+}
