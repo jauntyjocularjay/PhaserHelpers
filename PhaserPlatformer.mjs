@@ -1,18 +1,22 @@
 import {
     Frame,
     SquareFrame
-} from './Frame.mjs'
+} from './Platformer/Frame.mjs'
 
 import {
     Map,
     SquareMap
-} from './Map.mjs'
+} from './Platformer/Map.mjs'
+
+import {
+    CharacterState
+} from './Platformer/Character.mjs'
 
 import {
     EnvironmentImage,
     EnvironmentTileset,
     Environment
-} from './Environment.mjs'
+} from './Platformer/Environment.mjs'
 
 
 /*** Preload Functions ***/
@@ -77,6 +81,7 @@ export {
     SquareFrame,
     Map,
     SquareMap,
+    CharacterState,
     EnvironmentImage,
     EnvironmentTileset,
     Environment,
