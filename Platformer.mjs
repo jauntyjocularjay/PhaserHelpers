@@ -58,7 +58,8 @@ function loadCharacterIdle(idle)
 }
 
 /*** Create Functions ***/
-function addEnvironment(environment){
+function createEnvironment(environment)
+{
     const bg = environment.background
     const decor = environment.decor
     const props = environment.props
@@ -71,7 +72,7 @@ function addEnvironment(environment){
     })
 }
 
-function addCharacterIdle(idle)
+function createCharacterIdle(idle)
 {
 
 }
@@ -87,5 +88,5 @@ export {
     Environment,
     loadEnvironment,
     loadCharacterIdle,
-    addEnvironment
+    createEnvironment as addEnvironment
 }
