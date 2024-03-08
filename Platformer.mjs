@@ -9,8 +9,9 @@ import {
 } from './Platformer/Map.mjs'
 
 import {
-    CharacterState
-} from './Platformer/Character.mjs'
+    SpriteSheet,
+    loadSpriteSheet
+} from './Platformer/Sprite.mjs'
 
 import {
     EnvironmentImage,
@@ -18,9 +19,24 @@ import {
     Environment
 } from './Platformer/Environment.mjs'
 
+import {
+    VIEW
+} from './Constants.mjs'
+
+
+const config = {
+    type: Phaser.AUTO,
+    width: VIEW.width,
+    height: VIEW.height,
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+}
 
 /*** Preload Functions ***/
-function loadEnvironment(environment)
+function preloadEnvironment(environment)
 {
     const bg = environment.background
     const layers = environment.layers
@@ -52,9 +68,9 @@ function loadEnvironment(environment)
     })
 }
 
-function loadCharacterIdle(idle)
+function preloadSpriteSheet(index, spritesheet)
 {
-    this.load.spritesheet(idle.alias, idle.png, idle.frame)
+    index.load.spritesheet(spritesheet.alias, spritesheet.png, spritesheet.frame)
 }
 
 /*** Create Functions ***/
@@ -86,7 +102,9 @@ export {
     EnvironmentImage,
     EnvironmentTileset,
     Environment,
-    loadEnvironment,
-    loadCharacterIdle,
-    createEnvironment as addEnvironment
+    preloadEnvironment as loadEnvironment,
+    preloadSpriteSheet as loadCharacterIdle,
+    createEnvironment as addEnvironment,
+    VIEW,
+    config
 }
