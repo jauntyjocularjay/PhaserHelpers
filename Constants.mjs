@@ -1,11 +1,35 @@
-import { index } from '../GAME.mjs'
+import { Config } from './Config.mjs'
+import { Scene } from './Scene.mjs'
+import { View } from './View.mjs'
+import {
+    Frame,
+    SquareFrame
+} from './Frame.mjs'
+import { 
+    Image,
+    SpriteSheet
+} from './Image.mjs'
 
+const root = '../../'
 
-const VIEW = {
-    width: 512,
-    height: 384
+const physics = {
+    platformer: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    }
 }
 
 export {
-    VIEW
+    Config,
+    Scene,
+    View,
+    Frame,
+    SquareFrame,
+    Image,
+    SpriteSheet,
+    root,
+    physics
 }
