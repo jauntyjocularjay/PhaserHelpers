@@ -6,9 +6,9 @@ import {
     SquareFrame
 } from './Frame.mjs'
 import { 
-    Image,
+    Img,
     SpriteSheet
-} from './Image.mjs'
+} from './Img.mjs'
 
 const root = '../../'
 
@@ -28,7 +28,7 @@ export {
     View,
     Frame,
     SquareFrame,
-    Image,
+    Img,
     SpriteSheet,
     root,
     physics

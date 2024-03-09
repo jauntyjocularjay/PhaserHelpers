@@ -1,4 +1,4 @@
-class Image {
+class Img {
     constructor(alias, path)
     {
         this.alias = alias
@@ -10,7 +10,7 @@ class Image {
         index.load.image(this.alias, this.path)
     }
 
-    create(index, posX, posY)
+    create(index, posX=0, posY=0)
     {
         index.add.image(posX, posY, this.alias)
     }
@@ -21,7 +21,7 @@ class Image {
     }
 }
 
-class SpriteSheet extends Image {
+class SpriteSheet extends Img {
     constructor(alias, path, frame){
         super(alias, path)
         this.frame = frame
@@ -44,6 +44,6 @@ class SpriteSheet extends Image {
 }
 
 export { 
-    Image,
+    Img,
     SpriteSheet
 }
