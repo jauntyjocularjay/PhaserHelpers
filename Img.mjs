@@ -1,21 +1,25 @@
+import { Player } from './Constants.mjs'
+
 class Img {
-    constructor(alias, path)
+    constructor(alias, path, func=null)
     {
         this.alias = alias
         this.path = path
+        this.func = func
     }
 
-    preload(index)
+    preload(scene)
     {
-        index.load.image(this.alias, this.path)
+        scene.load.image(this.alias, this.path)
     }
 
-    create(index, posX=0, posY=0)
+    create(scene, posX=0, posY=0)
     {
-        index.add.image(posX, posY, this.alias)
+        scene.add.image(posX, posY, this.alias)
+        if(this.func){this.func()}
     }
 
-    update(index)
+    update(scene)
     {
 
     }
@@ -27,17 +31,16 @@ class SpriteSheet extends Img {
         this.frame = frame
     }
 
-    preload(index)
+    preload(scene)
     {
-        index.load.spritesheet(this.alias, this.path, this.frame)
+        scene.load.spritesheet(this.alias, this.path, this.frame)
     }
 
-    create(index)
+    create(posX, posY, scene)
     {
-        index.add.spritesheet()
     }
 
-    update(index)
+    update(scene)
     {
         
     }

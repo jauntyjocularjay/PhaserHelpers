@@ -1,6 +1,7 @@
 import { Config } from './Config.mjs'
 import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
+import { Player } from './Player.mjs'
 import {
     Frame,
     SquareFrame
@@ -26,6 +27,7 @@ export {
     Config,
     Scene,
     View,
+    Player,
     Frame,
     SquareFrame,
     Img,
