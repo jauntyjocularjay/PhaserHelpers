@@ -20,7 +20,10 @@ class Player {
 
     create(view, scene)
     {
-        this.setSprite(scene.physics.add.sprite(view.centerX(), view.centerY(), this.spriteSheet.alias), bounce, collideWorldBounds)
+        this.setSprite(scene.physics.add.sprite(view.centerX(), view.centerY(), this.spriteSheet.alias))
+        this.setSprite(this.getSprite().setBounce(bounce))
+        this.setSprite(this.getSprite().setCollideWorldBounds(collideWorldBounds))
+        this.setCursors(scene.input.keyboard.createCursorKeys())
 
         scene.anims.create({
             key: 'left',
@@ -41,13 +44,31 @@ class Player {
             frameRate: 10,
             repeat: -1
         })
-
-        // this.cursors = scene.input.keyboard.createCursorKeys()
     }
 
     update()
     {
+        
+        if (this.getCursors().left.isDown)
+        {
+            this.getSprite().setVelocityX(-160);
+            this.getSprite().anims.play('left', true);
+        }
+        else if (this.getCursors().right.isDown)
+        {
+            this.getSprite().setVelocityX(160);
+            this.getSprite().anims.play('right', true);
+        }
+        else
+        {
+            this.getSprite().setVelocityX(0);
+            this.getSprite().anims.play('turn');
+        }
 
+        if (this.getCursors().up.isDown && this.getSprite().body.touching.down)
+        {
+            this.getSprite().setVelocityY(-330);
+        }
     }
 }
 
