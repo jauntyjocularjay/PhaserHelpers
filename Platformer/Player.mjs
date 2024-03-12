@@ -13,34 +13,34 @@ class Player {
         this.getCursors = () => {return this.cursors}
     }
 
-    preload(scene)
+    preload(activeScene)
     {
-        this.spriteSheet.preload(scene)
+        this.spriteSheet.preload(activeScene)
     }
 
-    create(view, scene)
+    create(view, activeScene)
     {
-        this.setSprite(scene.physics.add.sprite(view.centerX(), view.centerY(), this.spriteSheet.alias))
+        this.setSprite(activeScene.physics.add.sprite(view.centerX(), view.centerY(), this.spriteSheet.alias))
         this.setSprite(this.getSprite().setBounce(bounce))
         this.setSprite(this.getSprite().setCollideWorldBounds(collideWorldBounds))
-        this.setCursors(scene.input.keyboard.createCursorKeys())
+        this.setCursors(activeScene.input.keyboard.createCursorKeys())
 
-        scene.anims.create({
+        activeScene.anims.create({
             key: 'left',
-            frames: scene.anims.generateFrameNumbers('dude', {start: 0, end: 3}),
+            frames: activeScene.anims.generateFrameNumbers('dude', {start: 0, end: 3}),
             frameRate: 10,
             repeat: -1
         })
 
-        scene.anims.create({
+        activeScene.anims.create({
             key: 'turn',
             frames: [{key: 'dude', frame: 4}],
             frameRate: 20
         })
 
-        scene.anims.create({
+        activeScene.anims.create({
             key: 'right',
-            frames: scene.anims.generateFrameNumbers('dude', {start: 5, end: 8}),
+            frames: activeScene.anims.generateFrameNumbers('dude', {start: 5, end: 8}),
             frameRate: 10,
             repeat: -1
         })

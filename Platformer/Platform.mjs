@@ -2,19 +2,20 @@ class Platform {
     constructor(img)
     {
         this.img = img
+        this.physicsGroup = null
     }
 
-    preload(scene)
+    preload(activeScene)
     {
-        this.getImg().preload(scene)
+        this.getImg().preload(activeScene)
     }
 
-    create(scene)
+    create(activeScene)
     {
-
+        
     }
 
-    update(scene)
+    update(activeScene)
     {
 
     }
@@ -28,6 +29,23 @@ class Platform {
     {
         this.img = img
     }
+
+    getPhysicsGroup()
+    {
+        return this.physicsGroup
+    }
+
+    setPhysicsGroup(staticGroup)
+    {
+        this.physicsGroup = staticGroup
+    }
+
+    level1(activeScene)
+    {
+        const physicsGroup = this.getPhysicsGroup()
+        physicsGroup.create(400, 568, 'ground').setScale(2).refreshBody()
+    }
+
 }
 
 export { Platform }

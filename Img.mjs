@@ -8,18 +8,18 @@ class Img {
         this.func = func
     }
 
-    preload(scene)
+    preload(activeScene)
     {
-        scene.load.image(this.alias, this.path)
+        activeScene.load.image(this.alias, this.path)
     }
 
-    create(scene, posX=0, posY=0)
+    create(activeScene, posX=0, posY=0)
     {
-        scene.add.image(posX, posY, this.alias)
+        activeScene.add.image(posX, posY, this.alias)
         if(this.func){this.func()}
     }
 
-    update(scene)
+    update(activeScene)
     {
 
     }
@@ -31,16 +31,16 @@ class SpriteSheet extends Img {
         this.frame = frame
     }
 
-    preload(scene)
+    preload(activeScene)
     {
-        scene.load.spritesheet(this.alias, this.path, this.frame)
+        activeScene.load.spritesheet(this.alias, this.path, this.frame)
     }
 
-    create(posX, posY, scene)
+    create(posX, posY, activeScene)
     {
     }
 
-    update(scene)
+    update(activeScene)
     {
         
     }
