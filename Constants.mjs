@@ -3,6 +3,11 @@ import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
 import { Player } from './Player.mjs'
 import {
+    Squad,
+    Role, 
+    SquadMember
+} from './TBStrategy/Squad.mjs'
+import {
     Frame,
     SquareFrame
 } from './Frame.mjs'
@@ -28,6 +33,9 @@ export {
     Scene,
     View,
     Player,
+    Squad,
+    Role,
+    SquadMember,
     Frame,
     SquareFrame,
     Img,
