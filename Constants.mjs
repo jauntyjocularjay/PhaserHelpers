@@ -1,7 +1,8 @@
 import { Config } from './Config.mjs'
 import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
-import { Player } from './Player.mjs'
+import { Player } from './Platformer/Player.mjs'
+import { Platform } from './Platformer/Platform.mjs'
 import {
     Squad,
     Role, 
@@ -15,8 +16,6 @@ import {
     Img,
     SpriteSheet
 } from './Img.mjs'
-
-const root = '../../'
 
 const physics = {
     platformer: {
@@ -39,7 +38,7 @@ export {
     Frame,
     SquareFrame,
     Img,
+    Platform,
     SpriteSheet,
-    root,
     physics
 }
