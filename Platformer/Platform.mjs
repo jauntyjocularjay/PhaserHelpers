@@ -2,28 +2,21 @@ import { EA } from '../Constants.mjs'
 
 class Platform extends EA {
     constructor(img) {
+        super()
         this.img = img
         this.physicsGroup = null
     }
 
     preload(activeScene) {
-        this.getImg().preload(activeScene)
+        this.get('img').preload(activeScene)
     }
 
     create(activeScene) {
-
+        this.physicsGroup = activeScene.physics.add.staticGroup()
     }
 
     update(activeScene) {
-
     }
-
-    level1(activeScene) {
-        const physicsGroup = this.get('physicsGroup')
-
-        physicsGroup.create(400, 568, 'ground').setScale(2).refreshBody()
-    }
-
 }
 
 export { Platform }

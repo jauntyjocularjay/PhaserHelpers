@@ -1,12 +1,30 @@
 import { EA } from './Constants.mjs'
 
+/**
+ * @summary
+ *      this appears to be a problematic class
+ *      phaser will not load with it
+ */
+
 class Scene extends EA {
-    constructor(preload, create, update)
+    constructor(p, c, u)
     {
         super()
-        this.preload = preload
-        this.create = create
-        this.update = update
+        this.p = p
+        this.c = c
+        this.u = u
+    }
+
+    preload(activeScene) {
+        this.p(activeScene)
+    }
+
+    create(activeScene) {
+        this.c(activeScene)
+    }
+
+    update(activeScene) {
+        this.u(activeScene)
     }
 }
 
