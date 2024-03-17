@@ -1,4 +1,5 @@
 import { default as EA } from './lib/ea/EasyAccessor.mjs'
+import { Enum } from './lib/EnumJS/ENUM.mjs'
 import { Config } from './Config.mjs'
 import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
@@ -17,18 +18,9 @@ import {
     SpriteSheet
 } from './Img.mjs'
 
-const physics = {
-    platformer: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 300 },
-            debug: false
-        }
-    }
-}
-
 export {
     EA,
+    Enum,
     Config,
     Scene,
     View,
@@ -39,7 +31,5 @@ export {
     Frame,
     SquareFrame,
     Img,
-    Platform,
     SpriteSheet,
-    physics
 }
