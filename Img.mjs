@@ -12,12 +12,11 @@ class Img extends EA {
     static webp = '.webp'
     static svg = '.svg'
 
-    constructor(alias, path, func=null)
+    constructor(alias, path)
     {
         super()
         this.alias = alias
         this.path = path
-        this.func = func
     }
 
     preload(activeScene)
@@ -28,7 +27,6 @@ class Img extends EA {
     create(activeScene, posX=0, posY=0)
     {
         activeScene.add.image(posX, posY, this.alias)
-        if(this.func){this.func()}
     }
 
     update(activeScene)
