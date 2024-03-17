@@ -6,6 +6,7 @@ import {
 class Img extends EA {
     constructor(alias, path, func=null)
     {
+        super()
         this.alias = alias
         this.path = path
         this.func = func

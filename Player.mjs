@@ -3,6 +3,7 @@ import { EA } from './Constants.mjs'
 class Player extends EA {
     constructor(spriteSheet)
     {
+        super()
         this.spriteSheet = spriteSheet
         this.sprite = null
     }

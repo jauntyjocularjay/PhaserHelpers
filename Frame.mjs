@@ -1,7 +1,8 @@
-import { EA } from '../Constants.mjs'
+import { EA } from './Constants.mjs'
 
 class Frame extends EA {
     constructor(width,height){
+        super()
         this.frameWidth = width
         this.frameHeight = height
     }

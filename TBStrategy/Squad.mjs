@@ -8,6 +8,7 @@ import {
 
 class Squad extends EA {
     constructor() {
+        super()
         this.member1
         this.member2
         this.member3
