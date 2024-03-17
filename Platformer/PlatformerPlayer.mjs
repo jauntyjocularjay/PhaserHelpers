@@ -50,12 +50,16 @@ class PlatformerPlayer extends Player {
 
     update(cursors) {
         const velocity = this.get('velocity')
-        if (cursors.left.isDown)
+        const left = cursors.left.isDown
+        const right = cursors.right.isDown
+        const up = cursors.up.isDown
+
+        if (left)
         {
             this.get('physicsGroup').setVelocityX(-velocity.x);
             this.get('physicsGroup').anims.play('left', true);
         }
-        else if (cursors.right.isDown)
+        else if (right)
         {
             this.get('physicsGroup').setVelocityX(velocity.x);
             this.get('physicsGroup').anims.play('right', true);
@@ -66,7 +70,7 @@ class PlatformerPlayer extends Player {
             this.get('physicsGroup').anims.play('turn');
         }
 
-        if (cursors.up.isDown && this.get('physicsGroup').body.touching.down)
+        if (up && this.get('physicsGroup').body.touching.down)
         {
             this.get('physicsGroup').setVelocityY(velocity.y);
         }
