@@ -1,8 +1,11 @@
-import { Player } from '../Constants.mjs'
+import { 
+    Player,
+    EA
+} from '../Constants.mjs'
 
 
 
-class Squad {
+class Squad extends EA {
     constructor()
     {
         this.member1
@@ -18,23 +21,27 @@ class SquadMember extends Player {
         super(spriteSheet)
             // this.spriteSheet
             // this.sprite
-            // this.cursor
+            // this.get('') from EasyAccessors
+            // this.set('property',value) from EasyAccessors
         this.alias = ''
         this.role = null
         this.animation = {}
         this.abilities = {}
-        /**
-         * @summary
-         * 1 Health Pts ~ 4 Action Pts
-         */
         this.action = 0
-        this.health = 0
+        this.attack = 0
+        this.defend = 0
+        this.get = (property) =>{
+            return this[property]
+        }
+        this.set = (property, value) => {
+            this[property] = value
+        }
     }
 }
 
 class Role extends Enum {
     constructor(roles){
-        super(roles);
+        super(roles)
     }
 }
 

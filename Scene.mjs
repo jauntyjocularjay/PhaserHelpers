@@ -1,3 +1,5 @@
+import { EA } from '../Constants.mjs'
+
 class Scene {
     constructor(preload, create, update)
     {

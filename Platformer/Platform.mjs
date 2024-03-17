@@ -1,4 +1,6 @@
-class Platform {
+import { EA } from '../Constants.mjs'
+
+class Platform extends EA {
     constructor(img)
     {
         this.img = img
@@ -20,29 +22,10 @@ class Platform {
 
     }
 
-    getImg()
-    {
-        return this.img
-    }
-    
-    setImg(img)
-    {
-        this.img = img
-    }
-
-    getPhysicsGroup()
-    {
-        return this.physicsGroup
-    }
-
-    setPhysicsGroup(staticGroup)
-    {
-        this.physicsGroup = staticGroup
-    }
-
     level1(activeScene)
     {
-        const physicsGroup = this.getPhysicsGroup()
+        const physicsGroup = this.get('physicsGroup')
+
         physicsGroup.create(400, 568, 'ground').setScale(2).refreshBody()
     }
 

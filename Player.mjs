@@ -1,16 +1,10 @@
-const bounce = 0.2
-const collideWorldBounds = true
+import { EA } from './Constants.mjs'
 
-class Player {
+class Player extends EA {
     constructor(spriteSheet)
     {
         this.spriteSheet = spriteSheet
         this.sprite = null
-        this.setSprite = sprite => {this.sprite = sprite}
-        this.getSprite = () => {return this.sprite}
-        this.cursors = null
-        this.setCursors = cursors => {this.cursors = cursors}
-        this.getCursors = () => {return this.cursors}
     }
 
     preload(activeScene)

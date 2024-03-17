@@ -1,8 +1,8 @@
+import { default as EA } from './lib/ea/EasyAccessor.mjs'
 import { Config } from './Config.mjs'
 import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
-import { Player } from './Platformer/Player.mjs'
-import { Platform } from './Platformer/Platform.mjs'
+import { Player } from './Player.mjs'
 import {
     Squad,
     Role, 
@@ -28,6 +28,7 @@ const physics = {
 }
 
 export {
+    EA,
     Config,
     Scene,
     View,

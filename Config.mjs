@@ -1,5 +1,6 @@
-class Config
-{
+import { EA } from '../Constants.mjs'
+
+class Config extends EA {
     constructor(view, physics, scene)
     {
         this.type = Phaser.AUTO,

@@ -1,6 +1,9 @@
-import { Player } from './Constants.mjs'
+import {
+    Player,
+    EA
+} from './Constants.mjs'
 
-class Img {
+class Img extends EA {
     constructor(alias, path, func=null)
     {
         this.alias = alias
