@@ -29,8 +29,7 @@ config.scene = {
 const game = new Phaser.Game(config)
 const assets = '../js/assets/'
 const elements = {
-    sky: new Img('ALIAS', assets + 'FILENAME'),
-    star: new Img('ALIAS', assets + 'FILENAME'),
+    ASSET: new Img('ALIAS', assets + 'FILENAME'),
     platform: new Platform(new Img('ALIAS', assets + 'FILENAME')),
     player: new PlatformerPlayer(new SpriteSheet('ALIAS', assets + 'FILENAME', new Frame(WIDTH, HEIGHT))),
 }
