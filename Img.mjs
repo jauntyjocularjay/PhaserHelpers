@@ -17,6 +17,7 @@ class Img extends EA {
         super()
         this.alias = alias
         this.path = path
+        console.log('Img.constructor() finished:\n', this)
     }
 
     preload(activeScene)
@@ -26,6 +27,7 @@ class Img extends EA {
 
     create(activeScene, posX=0, posY=0)
     {
+        console.log('Img.create() entered')
         activeScene.add.image(posX, posY, this.alias)
     }
 
@@ -39,18 +41,25 @@ class SpriteSheet extends Img {
     constructor(alias, path, frame){
         super(alias, path)
         this.frame = frame
+        console.log('SpriteSheet.constructor() finished:\n', this)
     }
 
-    preload(activeScene)
+    preloadSheet(activeScene)
     {
         activeScene.load.spritesheet(this.alias, this.path, this.frame)
     }
 
-    create(posX, posY, activeScene)
+    createImg()
     {
+        super.create(activeScene, posX, posY)
     }
 
-    update(activeScene)
+    create(activeScene, posX, posY)
+    {
+        activeScene.add.create(posX, posY, this.alias)
+    }
+
+    updateSheet(activeScene)
     {
         
     }
