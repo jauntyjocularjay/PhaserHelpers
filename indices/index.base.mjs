@@ -14,7 +14,6 @@ import {
     physics,
 } from '../Platformer/index.mjs'
 
-
 let activeScene
 let sceneA
 let config
