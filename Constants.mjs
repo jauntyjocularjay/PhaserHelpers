@@ -4,6 +4,7 @@ import { Config } from './Config.mjs'
 import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
 import { Player } from './Player.mjs'
+import { Position } from './Position.mjs'
 import { Typeface } from './Typeface.mjs'
 import {
     Frame,
@@ -21,6 +22,7 @@ export {
     Scene,
     View,
     Player,
+    Position,
     Typeface,
     Frame,
     SquareFrame,
