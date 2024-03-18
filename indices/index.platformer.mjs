@@ -2,6 +2,7 @@ import {
     Config,
     View,
     Player,
+    Typeface,
     Frame,
     SquareFrame,
     Img,

@@ -4,7 +4,7 @@ import { Config } from './Config.mjs'
 import { Scene } from './Scene.mjs'
 import { View } from './View.mjs'
 import { Player } from './Player.mjs'
-import { Typeface } from './Typefaces.mjs'
+import { Typeface } from './Typeface.mjs'
 import {
     Frame,
     SquareFrame

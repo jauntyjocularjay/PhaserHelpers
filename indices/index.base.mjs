@@ -3,6 +3,7 @@ import {
     Scene,
     View,
     Player,
+    Typeface,
     Frame,
     SquareFrame,
     Img,

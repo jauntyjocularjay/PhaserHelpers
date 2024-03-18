@@ -18,6 +18,7 @@ class Typeface extends EA {
     static em = 'em'
 
     constructor(size, fillStr){
+        super()
         this.size = size
         this.fill = fillStr
         this.unit = Typeface.px
