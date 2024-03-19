@@ -26,6 +26,14 @@ class Scene extends EA {
     update(activeScene) {
         this.u(activeScene)
     }
+
+    transform(activeScene){
+        return {
+            preload: this.p(activeScene),
+            create: this.c(activeScene),
+            update: this.u(activeScene)
+        }
+    }
 }
 
 export {
