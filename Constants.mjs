@@ -10,7 +10,7 @@ import {
     Position,
     Spread
 } from './Position.mjs'
-import { Scene } from './Scene.mjs'
+// import { Scene } from './Scene.mjs'
 import { Typeface } from './Typeface.mjs'
 import {
     Frame,
@@ -26,7 +26,7 @@ export {
     EA,
     Enum,
     Config,
-    Scene,
+    // Scene,
     View,
     Player,
     Position,
