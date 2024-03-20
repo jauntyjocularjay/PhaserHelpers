@@ -17,7 +17,6 @@ class Img extends EA {
         super()
         this.alias = alias
         this.path = path
-        // console.log('Img.constructor() finished:\n', this)
     }
 
     preload(activeScene)
