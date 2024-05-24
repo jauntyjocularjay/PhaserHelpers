@@ -4,6 +4,3 @@
 [submodule "lib/EnumJS"]
 	path = lib/EnumJS
 	url = https://github.com/GeorgeSchafer/EnumJS.git
-[submodule "lib/ea"]
-	path = lib/ea
-	url = https://github.com/GeorgeSchafer/EasyAccessorJS
