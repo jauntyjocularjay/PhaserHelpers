@@ -1,5 +1,5 @@
 import { gun_parts } from '../index.mjs'
-import { default as EA } from './lib/ea/EasyAccessor.mjs'
+import { default as EA } from './ea/EasyAccessor.mjs'
 import { Enum } from './lib/EnumJS/ENUM.mjs'
 import { Config } from './index.mjs'
 // import { Scene } from './Scene.mjs'
