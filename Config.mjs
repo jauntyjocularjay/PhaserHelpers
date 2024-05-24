@@ -1,4 +1,4 @@
-import { EA } from './Constants.mjs'
+import { EA } from './index.mjs'
 
 class Config extends EA {
     constructor(view, physics, scene=null)
