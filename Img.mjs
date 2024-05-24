@@ -1,7 +1,7 @@
 import {
     Player,
     EA
-} from './Constants.mjs'
+} from './index.mjs'
 
 class Img extends EA {
     static png = '.png'

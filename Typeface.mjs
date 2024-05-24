@@ -1,4 +1,4 @@
-import { EA } from './Constants.mjs'
+import { EA } from './index.mjs'
 
 class Typeface extends EA {
     static red = '#f00'

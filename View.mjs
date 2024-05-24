@@ -1,7 +1,7 @@
 import { 
     EA,
     Position
-} from './Constants.mjs'
+} from './index.mjs'
 
 class View extends EA {
     constructor(width, height)

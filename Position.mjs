@@ -1,4 +1,4 @@
-import { EA } from './Constants.mjs'
+import { EA } from './index.mjs'
 
 class Position extends EA {
     constructor(x,y){

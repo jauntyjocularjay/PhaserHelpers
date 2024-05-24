@@ -1,7 +1,7 @@
 import {
     Position,
     Typeface
-} from "./Constants.mjs"
+} from "./index.mjs"
 
 class Score {
     constructor(prefix='score: ', value=0, increment=1, typeface=new Typeface(16, '#000'),position=new Position(0,0)) {
