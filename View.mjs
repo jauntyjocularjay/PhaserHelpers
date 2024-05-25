@@ -1,9 +1,9 @@
 import { 
-    EA,
+    EasyAccessor,
     Position
 } from './index.mjs'
 
-class View extends EA {
+class View extends EasyAccessor {
     constructor(width, height)
     {
         super()

@@ -1,6 +1,6 @@
-import { EA } from '../Constants.mjs'
+import { EasyAccessor } from '../index.mjs'
 
-class Platform extends EA {
+class Platform extends EasyAccessor {
     constructor(img) {
         super()
         this.alias = img.alias

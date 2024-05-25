@@ -1,4 +1,4 @@
-import { Player } from '../Constants.mjs'
+import { Player } from '../index.mjs'
 
 class PlatformerPlayer extends Player {
     constructor(spriteSheet) {

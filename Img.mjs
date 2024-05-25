@@ -1,9 +1,9 @@
 import {
     Player,
-    EA
+    EasyAccessor
 } from './index.mjs'
 
-class Img extends EA {
+class Img extends EasyAccessor {
     static png = '.png'
     static jpg = '.jpg'
     static gif = '.gif'
