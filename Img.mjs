@@ -19,7 +19,11 @@ class Img extends EasyAccessor {
         this.path = path
     }
 
-    preload(activeScene)
+    preload(activeScene)  // pass 'this' as the argument
+    /**
+     * @method preload
+     * @param activeScene is 'this' from the main Game.mjs or Index.mjs file
+     */
     {
         activeScene.load.image(this.alias, this.path)
     }
