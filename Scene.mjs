@@ -1,4 +1,4 @@
-// import { EA } from './Constants.mjs'
+// import { EasyAccessor } from './Constants.mjs'
 
 // /**
 //  * @summary
@@ -6,7 +6,7 @@
 //  *      phaser will not load with it
 //  */
 
-// class Scene extends EA {
+// class Scene extends EasyAccessor {
 //     constructor(p, c, u)
 //     {
 //         super()

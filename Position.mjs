@@ -1,6 +1,6 @@
-import { EA } from './index.mjs'
+import { EasyAccessor } from './index.mjs'
 
-class Position extends EA {
+class Position extends EasyAccessor {
     constructor(x,y){
         super()
         this.x = x

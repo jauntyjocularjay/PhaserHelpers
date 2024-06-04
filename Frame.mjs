@@ -1,6 +1,6 @@
-import { EA } from './index.mjs'
+import { EasyAccessor } from './index.mjs'
 
-class Frame extends EA {
+class Frame extends EasyAccessor {
     constructor(width,height){
         super()
         this.frameWidth = width
