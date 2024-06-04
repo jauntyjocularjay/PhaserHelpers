@@ -1,7 +1,6 @@
-import { gun_parts } from '../index.mjs'
 import { EasyAccessor } from './ea/EasyAccessor.mjs'
 import { Enum } from './enumjs/ENUM.mjs'
-import { Config } from './index.mjs'
+import { Config } from './Config.mjs'
 import { Score } from './Score.mjs'
 import { View } from './View.mjs'
 import { Player } from './Player.mjs'
@@ -19,12 +18,12 @@ import {
     SpriteSheet
 } from './Img.mjs'
 
+
+
 export {
-    gun_parts,
-    EasyAccessor as EA,
+    EasyAccessor,
     Enum,
     Config,
-    // Scene,
     View,
     Player,
     Position,

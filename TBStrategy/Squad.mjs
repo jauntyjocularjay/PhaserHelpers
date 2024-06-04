@@ -1,12 +1,16 @@
+/**
+ * @class Squad and all sub-classes are a work in progress
+ * @todo work in progress
+ */
 import {
     Player,
     Enum,
-    EA
-} from '../Constants.mjs'
+    EasyAccessor
+} from '../index.mjs'
 
 
 
-class Squad extends EA {
+class Squad extends EasyAccessor {
     constructor() {
         super()
         this.member1

@@ -1,6 +1,6 @@
-import { EA } from './index.mjs'
+import { EasyAccessor } from './index.mjs'
 
-class Player extends EA {
+class Player extends EasyAccessor {
     constructor(spriteSheet)
     {
         super()

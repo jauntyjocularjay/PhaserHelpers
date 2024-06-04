@@ -1,6 +1,6 @@
-import { EA } from './index.mjs'
+import { EasyAccessor } from './index.mjs'
 
-class Typeface extends EA {
+class Typeface extends EasyAccessor {
     static red = '#f00'
     static orange = '#ffa500'
     static yellow = '#ff0'

@@ -1,7 +1,7 @@
 import { Platform } from './Platform.mjs'
 import { PlatformerPlayer } from './PlatformerPlayer.mjs'
 
-const physics = {
+const PHYSICS = {
     default: 'arcade',
     arcade: {
         gravity: { y: 300 },
@@ -12,5 +12,5 @@ const physics = {
 export {
     Platform,
     PlatformerPlayer,
-    physics
+    PHYSICS,
 }

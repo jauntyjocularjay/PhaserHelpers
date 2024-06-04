@@ -1,9 +1,9 @@
 import {
     Player,
-    EA
+    EasyAccessor
 } from './index.mjs'
 
-class Img extends EA {
+class Img extends EasyAccessor {
     static png = '.png'
     static jpg = '.jpg'
     static gif = '.gif'
@@ -19,7 +19,11 @@ class Img extends EA {
         this.path = path
     }
 
-    preload(activeScene)
+    preload(activeScene)  // pass 'this' as the argument
+    /**
+     * @method preload
+     * @param activeScene is 'this' from the main Game.mjs or Index.mjs file
+     */
     {
         activeScene.load.image(this.alias, this.path)
     }
