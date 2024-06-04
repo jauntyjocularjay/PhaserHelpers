@@ -20,16 +20,19 @@ class Config extends EasyAccessor {
     //     this.scene = scene
     // }
 
-    constructor(view, physics){ // , scene=null){
+    constructor(view, physics, scene=null){
         /**
          * @param {object} scene doesn't work when passed as an argument
          */
         super()
-        this.type = Phaser.AUTO,
-        this.width = view.width,
-        this.height = view.height,
-        this.physics = physics,
-        this.scene = null
+        this.type = Phaser.AUTO
+        this.width = view.width
+        this.height = view.height
+        this.physics = physics
+        this.scene = scene
+        this.preload = null
+        this.create = null
+        this.update = null
     }
 }
 
