@@ -17,6 +17,9 @@ import {
     Img,
     SpriteSheet
 } from './Img.mjs'
+import {
+    Scene
+} from './Scene.mjs'
 
 
 
@@ -27,6 +30,7 @@ export {
     View,
     Player,
     Position,
+    Scene,
     Score,
     Spread,
     Typeface,

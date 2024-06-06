@@ -1,41 +1,41 @@
-// import { EasyAccessor } from './Constants.mjs'
+import { EasyAccessor } from './index.mjs'
 
-// /**
-//  * @summary
-//  *      this appears to be a problematic class
-//  *      phaser will not load with it
-//  */
+/**
+ * @summary
+ *      this appears to be a problematic class
+ *      phaser will not load with it
+ */
 
-// class Scene extends EasyAccessor {
-//     constructor(p, c, u)
-//     {
-//         super()
-//         this.p = p
-//         this.c = c
-//         this.u = u
-//     }
+class Scene extends EasyAccessor {
+    constructor(p, c, u)
+    {
+        super()
+        this.p = p()
+        this.c = c()
+        this.u = u()
+    }
 
-//     preload(activeScene) {
-//         this.p(activeScene)
-//     }
+    preload() {
+        this.p()
+    }
 
-//     create(activeScene) {
-//         this.c(activeScene)
-//     }
+    create() {
+        this.c()
+    }
 
-//     update(activeScene) {
-//         this.u(activeScene)
-//     }
+    update() {
+        this.u()
+    }
 
-//     transform(activeScene){
-//         return {
-//             preload: this.p(activeScene),
-//             create: this.c(activeScene),
-//             update: this.u(activeScene)
-//         }
-//     }
-// }
+    transform(){
+        return {
+            preload: this.p(),
+            create: this.c(),
+            update: this.u()
+        }
+    }
+}
 
-// export {
-//     Scene
-// }
+export {
+    Scene
+}

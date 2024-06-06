@@ -8,7 +8,7 @@ import {
     SquareFrame,
     Img,
     SpriteSheet,
-} from '../Constants.mjs'
+} from '../index.mjs'
 import {
     Platform,
     physics,
