@@ -1,5 +1,4 @@
 import { EasyAccessor } from './ea/EasyAccessor.mjs'
-import { Enum } from './enumjs/ENUM.mjs'
 import { Config } from './Config.mjs'
 import { Score } from './Score.mjs'
 import { View } from './View.mjs'
@@ -25,7 +24,6 @@ import {
 
 export {
     EasyAccessor,
-    Enum,
     Config,
     View,
     Player,
