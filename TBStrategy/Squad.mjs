@@ -4,7 +4,6 @@
  */
 import {
     Player,
-    Enum,
     EasyAccessor
 } from '../index.mjs'
 
@@ -23,10 +22,6 @@ class Squad extends EasyAccessor {
 class SquadMember extends Player {
     constructor(spriteSheet) {
         super(spriteSheet)
-        // this.spriteSheet
-        // this.sprite
-        // this.get('') from EasyAccessors
-        // this.set('property',value) from EasyAccessors
         this.alias = ''
         this.role = null
         this.animation = {}
@@ -43,14 +38,7 @@ class SquadMember extends Player {
     }
 }
 
-class Role extends Enum {
-    constructor(roles) {
-        super(roles)
-    }
-}
-
 export {
     Squad,
-    Role,
     SquadMember
 }
