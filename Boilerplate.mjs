@@ -4,7 +4,6 @@
 */
 import {
     EasyAccessor,
-    Enum,
     Config,
     View,
     Player,

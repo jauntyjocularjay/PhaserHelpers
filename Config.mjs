@@ -29,10 +29,11 @@ class Config extends EasyAccessor {
         this.width = view.width
         this.height = view.height
         this.physics = physics
-        this.scene = scene
-        this.preload = null
-        this.create = null
-        this.update = null
+        this.scene = {
+            preload: null,
+            create: null,
+            update: null
+        }
     }
 }
 
