@@ -1,6 +1,3 @@
-[submodule "enumjs"]
-	path = enumjs
-	url = https://www.github.com/jauntyjocularjay/enumjs
 [submodule "ea"]
 	path = ea
 	url = https://github.com/jauntyjocularjay/EasyAccessorJS
