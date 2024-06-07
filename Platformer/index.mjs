@@ -4,7 +4,7 @@ import { PlatformerPlayer } from './PlatformerPlayer.mjs'
 const PHYSICS = {
     default: 'arcade',
     arcade: {
-        gravity: { y: 300 },
+        gravity: { y: 256 },
         debug: false
     }
 }
