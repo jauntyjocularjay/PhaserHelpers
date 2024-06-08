@@ -16,9 +16,9 @@ import {
     Img,
     SpriteSheet
 } from './Img.mjs'
-import {
-    Scene
-} from './Scene.mjs'
+// import {
+//     Scene
+// } from './Scene.mjs'
 
 
 
