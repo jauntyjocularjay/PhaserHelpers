@@ -10,32 +10,32 @@ class Scene extends EasyAccessor {
     constructor(p, c, u)
     {
         super()
-        this.p = p()
-        this.c = c()
-        this.u = u()
+        this.p = p
+        this.c = c
+        this.u = u
     }
 
     preload() {
-        this.p()
+        this.p
     }
 
     create() {
-        this.c()
+        this.c
     }
 
     update() {
-        this.u()
+        this.u
     }
 
     transform(){
         return {
-            preload: this.p(),
-            create: this.c(),
-            update: this.u()
+            preload: this.p,
+            create: this.c,
+            update: this.u
         }
     }
 }
 
 export {
-    Scene
+    // Scene
 }
