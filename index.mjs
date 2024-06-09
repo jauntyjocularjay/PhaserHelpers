@@ -17,12 +17,31 @@ import {
     SpriteSheet
 } from './Img.mjs'
 
-
+const PHYSICS = {
+    arcade: {
+        default: 'arcade',
+        arcade: {
+            gravity: {
+                y: 256,
+                x: 0
+            },
+            debug: false
+        }
+    },
+    platformer: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 256 },
+            debug: false
+        }
+    },
+}
 
 export {
     EasyAccessor,
     Config,
     View,
+    PHYSICS,
     Player,
     Position,
     Score,
