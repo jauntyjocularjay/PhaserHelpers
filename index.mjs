@@ -22,9 +22,10 @@ const PHYSICS = {
         default: 'arcade',
         arcade: {
             gravity: {
-                y: 256,
+                y: 16,
                 x: 0
             },
+            momentum: 0,
             debug: false
         }
     },
