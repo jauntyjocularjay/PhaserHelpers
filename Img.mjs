@@ -44,25 +44,14 @@ class SpriteSheet extends Img {
     constructor(alias, path, frame){
         super(alias, path)
         this.frame = frame
-        // console.log('SpriteSheet.constructor() finished:\n', this)
     }
 
-    preloadSheet(activeScene)
+    preload(activeScene)
     {
         activeScene.load.spritesheet(this.alias, this.path, this.frame)
     }
 
-    createImg()
-    {
-        super.create(activeScene, posX, posY)
-    }
-
-    create(activeScene, posX, posY)
-    {
-        activeScene.add.create(posX, posY, this.alias)
-    }
-
-    updateSheet(activeScene)
+    update(activeScene)
     {
         
     }
