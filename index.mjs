@@ -25,6 +25,7 @@ const PHYSICS = {
                 y: 256,
                 x: 0
             },
+            momentum: 0,
             debug: false
         }
     },
