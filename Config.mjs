@@ -7,7 +7,7 @@ import { EasyAccessor } from './index.mjs'
  *     No idea why passing it as an argument doesn't work. 
  */
 class Config extends EasyAccessor {
-    constructor(view, physics, scene=null){
+    constructor(view, physics=null, scene=null){
         /**
          * @param {object} scene doesn't work when passed as an argument
          */
